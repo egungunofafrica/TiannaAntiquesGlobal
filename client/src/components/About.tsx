@@ -26,7 +26,7 @@ export function About() {
                 <div className="absolute -inset-4 bg-primary/10 rounded-md transform rotate-3" />
                 <Avatar className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-md border-4 border-card" data-testid="img-founder-profile">
                   <AvatarImage 
-                    src="/attached_assets/Screenshot 2025-11-15 at 7.15.35 AM_1763212136700.png" 
+                    src="/attached_assets/ceo-tianna.png" 
                     alt="Tianna - CEO & Founder"
                     className="object-cover"
                   />

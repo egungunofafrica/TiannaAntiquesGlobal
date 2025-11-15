@@ -53,7 +53,7 @@ export function Footer() {
           <div className="pt-8 border-t border-border">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               <p className="text-sm text-muted-foreground" data-testid="text-footer-copyright">
-                © {new Date().getFullYear()} Michelle Tianna Antiques. All rights reserved.
+                © {new Date().getFullYear()} Tianna's Luxury Antiques. All rights reserved.
               </p>
               <p className="text-xs text-muted-foreground" data-testid="text-footer-countries">
                 Serving Dubai • USA • Italy • Germany • France • Canada

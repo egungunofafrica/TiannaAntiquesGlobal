@@ -8,10 +8,7 @@ export function Logo({ className = "" }: { className?: string }) {
       </div>
       <div className="flex flex-col">
         <span className="font-serif text-xl font-semibold tracking-tight text-foreground">
-          Michelle Tianna
-        </span>
-        <span className="text-xs font-sans tracking-widest text-muted-foreground uppercase">
-          Antiques
+          Tianna's Luxury Antiques
         </span>
       </div>
     </div>

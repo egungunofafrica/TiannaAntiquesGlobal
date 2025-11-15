@@ -10,7 +10,7 @@ export function About() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4" data-testid="heading-about">
-              About Michelle Tianna
+              About Tianna
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-founder-title">
@@ -26,11 +26,11 @@ export function About() {
                 <div className="absolute -inset-4 bg-primary/10 rounded-md transform rotate-3" />
                 <Avatar className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-md border-4 border-card" data-testid="img-founder-profile">
                   <AvatarImage 
-                    src="/attached_assets/Screenshot 2025-11-15 at 7.15.35 AM_1763211208830.png" 
-                    alt="Michelle Tianna - CEO & Founder"
+                    src="/attached_assets/Screenshot 2025-11-15 at 7.15.35 AM_1763212136700.png" 
+                    alt="Tianna - CEO & Founder"
                     className="object-cover"
                   />
-                  <AvatarFallback className="text-6xl font-serif">MT</AvatarFallback>
+                  <AvatarFallback className="text-6xl font-serif">T</AvatarFallback>
                 </Avatar>
               </div>
             </div>

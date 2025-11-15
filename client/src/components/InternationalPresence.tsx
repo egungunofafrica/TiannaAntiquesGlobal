@@ -22,7 +22,7 @@ export function InternationalPresence() {
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-global-operations-description">
-              Trusted by institutions and collectors across six countries
+              Serving distinguished institutions and private collectors worldwide
             </p>
           </div>
 
@@ -38,12 +38,9 @@ export function InternationalPresence() {
                     <MapPin className="w-8 h-8 text-primary" />
                   </div>
                   <div className="text-center">
-                    <p className="font-serif font-semibold text-foreground" data-testid={`text-country-${country.name.toLowerCase()}`}>
+                    <p className="font-serif font-semibold text-foreground text-lg" data-testid={`text-country-${country.name.toLowerCase()}`}>
                       {country.name}
                     </p>
-                    <Badge variant="secondary" className="mt-2 text-xs" data-testid={`badge-region-${country.name.toLowerCase()}`}>
-                      {country.region}
-                    </Badge>
                   </div>
                 </div>
               ))}

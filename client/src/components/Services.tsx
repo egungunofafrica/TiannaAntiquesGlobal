@@ -7,32 +7,32 @@ export function Services() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4">
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4" data-testid="heading-services">
               Our Services
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6" />
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-services-description">
               Comprehensive antique acquisition and supply services for institutional and commercial clients
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Acquiring Service */}
-            <Card className="p-10 border-card-border hover-elevate">
+            <Card className="p-10 border-card-border hover-elevate" data-testid="card-service-acquiring">
               <div className="flex items-start gap-4 mb-6">
                 <div className="p-3 bg-primary/10 rounded-md">
                   <ShoppingBag className="w-8 h-8 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-2">
+                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-2" data-testid="heading-acquiring">
                     Acquiring Antiques
                   </h3>
-                  <p className="text-sm text-muted-foreground uppercase tracking-wider">
+                  <p className="text-sm text-muted-foreground uppercase tracking-wider" data-testid="text-acquiring-subtitle">
                     Sourcing Excellence
                   </p>
                 </div>
               </div>
-              <p className="text-base text-foreground/80 leading-relaxed mb-6">
+              <p className="text-base text-foreground/80 leading-relaxed mb-6" data-testid="text-acquiring-description">
                 We specialize in sourcing exceptional antique pieces from established dealers, auctions, 
                 and private collections worldwide. Our extensive network and deep market knowledge ensure 
                 access to the finest European and Asian antiques.
@@ -58,21 +58,21 @@ export function Services() {
             </Card>
 
             {/* Supplying Service */}
-            <Card className="p-10 border-card-border hover-elevate">
+            <Card className="p-10 border-card-border hover-elevate" data-testid="card-service-supplying">
               <div className="flex items-start gap-4 mb-6">
                 <div className="p-3 bg-accent/10 rounded-md">
                   <Package className="w-8 h-8 text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-2">
+                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-2" data-testid="heading-supplying">
                     Supplying Collections
                   </h3>
-                  <p className="text-sm text-muted-foreground uppercase tracking-wider">
+                  <p className="text-sm text-muted-foreground uppercase tracking-wider" data-testid="text-supplying-subtitle">
                     Curated Solutions
                   </p>
                 </div>
               </div>
-              <p className="text-base text-foreground/80 leading-relaxed mb-6">
+              <p className="text-base text-foreground/80 leading-relaxed mb-6" data-testid="text-supplying-description">
                 We provide carefully curated antique collections tailored to the unique needs of museums, 
                 corporate offices, and retail establishments. Each piece is selected to enhance your space 
                 and tell a compelling story.
@@ -100,26 +100,26 @@ export function Services() {
 
           {/* Client Types */}
           <div className="grid sm:grid-cols-3 gap-6">
-            <Card className="p-8 text-center border-card-border hover-elevate">
+            <Card className="p-8 text-center border-card-border hover-elevate" data-testid="card-client-companies">
               <Building className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h4 className="font-serif text-xl font-semibold mb-2">Companies</h4>
-              <p className="text-sm text-muted-foreground">
+              <h4 className="font-serif text-xl font-semibold mb-2" data-testid="heading-client-companies">Companies</h4>
+              <p className="text-sm text-muted-foreground" data-testid="text-client-companies-description">
                 Corporate offices and headquarters seeking distinguished decor
               </p>
             </Card>
             
-            <Card className="p-8 text-center border-card-border hover-elevate">
+            <Card className="p-8 text-center border-card-border hover-elevate" data-testid="card-client-museums">
               <Package className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h4 className="font-serif text-xl font-semibold mb-2">Museums</h4>
-              <p className="text-sm text-muted-foreground">
+              <h4 className="font-serif text-xl font-semibold mb-2" data-testid="heading-client-museums">Museums</h4>
+              <p className="text-sm text-muted-foreground" data-testid="text-client-museums-description">
                 Cultural institutions requiring authenticated historical pieces
               </p>
             </Card>
             
-            <Card className="p-8 text-center border-card-border hover-elevate">
+            <Card className="p-8 text-center border-card-border hover-elevate" data-testid="card-client-malls">
               <Store className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h4 className="font-serif text-xl font-semibold mb-2">Malls</h4>
-              <p className="text-sm text-muted-foreground">
+              <h4 className="font-serif text-xl font-semibold mb-2" data-testid="heading-client-malls">Malls</h4>
+              <p className="text-sm text-muted-foreground" data-testid="text-client-malls-description">
                 Retail centers seeking elegant showpieces and displays
               </p>
             </Card>

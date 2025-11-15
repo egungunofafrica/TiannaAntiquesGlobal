@@ -24,13 +24,13 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
         <div className="max-w-5xl mx-auto space-y-8">
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight" data-testid="heading-hero">
             Curating History,
             <br />
             <span className="text-primary">Preserving Excellence</span>
           </h1>
           
-          <p className="text-xl sm:text-2xl text-white/90 font-light max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl sm:text-2xl text-white/90 font-light max-w-3xl mx-auto leading-relaxed" data-testid="text-hero-motto">
             International dealer specializing in premium European and Asian antiques
             for discerning collectors, museums, and institutions worldwide
           </p>
@@ -40,7 +40,7 @@ export function Hero() {
               size="lg"
               onClick={scrollToContact}
               data-testid="button-hero-contact"
-              className="text-base px-8 py-6 bg-primary hover:bg-primary/90 border border-primary-border"
+              className="bg-primary border border-primary-border"
             >
               Get in Touch
             </Button>
@@ -49,7 +49,7 @@ export function Hero() {
               variant="outline"
               onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}
               data-testid="button-hero-gallery"
-              className="text-base px-8 py-6 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
+              className="bg-white/10 backdrop-blur-sm border-white/30 text-white"
             >
               View Collection
             </Button>

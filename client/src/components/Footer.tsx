@@ -9,7 +9,7 @@ export function Footer() {
             {/* Brand */}
             <div>
               <Logo className="mb-4" />
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed" data-testid="text-footer-description">
                 International dealer specializing in premium European and Asian antiques 
                 for museums, companies, and collectors worldwide.
               </p>
@@ -17,34 +17,34 @@ export function Footer() {
 
             {/* Services */}
             <div>
-              <h4 className="font-serif text-lg font-semibold text-foreground mb-4">
+              <h4 className="font-serif text-lg font-semibold text-foreground mb-4" data-testid="heading-footer-services">
                 Services
               </h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Antique Acquisition</li>
-                <li>Collection Supply</li>
-                <li>Authentication & Appraisal</li>
-                <li>International Shipping</li>
+                <li data-testid="text-footer-service-acquisition">Antique Acquisition</li>
+                <li data-testid="text-footer-service-supply">Collection Supply</li>
+                <li data-testid="text-footer-service-authentication">Authentication & Appraisal</li>
+                <li data-testid="text-footer-service-shipping">International Shipping</li>
               </ul>
             </div>
 
             {/* Quick Contact */}
             <div>
-              <h4 className="font-serif text-lg font-semibold text-foreground mb-4">
+              <h4 className="font-serif text-lg font-semibold text-foreground mb-4" data-testid="heading-footer-contact">
                 Contact
               </h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <a href="mailto:michelletianna616@gmail.com" className="hover:text-primary transition-colors">
+                  <a href="mailto:michelletianna616@gmail.com" className="hover:text-primary transition-colors" data-testid="link-footer-email">
                     michelletianna616@gmail.com
                   </a>
                 </li>
                 <li>
-                  <a href="tel:0434654261" className="hover:text-primary transition-colors">
+                  <a href="tel:0434654261" className="hover:text-primary transition-colors" data-testid="link-footer-phone">
                     0434 654 261
                   </a>
                 </li>
-                <li>Redbank Plains, QLD, Australia</li>
+                <li data-testid="text-footer-location">Redbank Plains, QLD, Australia</li>
               </ul>
             </div>
           </div>
@@ -52,10 +52,10 @@ export function Footer() {
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-border">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground" data-testid="text-footer-copyright">
                 © {new Date().getFullYear()} Michelle Tianna Antiques. All rights reserved.
               </p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-muted-foreground" data-testid="text-footer-countries">
                 Serving Dubai • USA • Italy • Germany • France • Canada
               </p>
             </div>

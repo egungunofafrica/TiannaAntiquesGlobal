@@ -3,103 +3,89 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// Import antique images
-import chinesePorcelain from "@assets/antique_chinese_porc_b2f04495_1763209187582.jpg";
-import frenchBronze1 from "@assets/french_empire_bronze_ddd9e64e_1763209187601.jpg";
-import sculpture1 from "@assets/photo_2025-11-13_11-51-01_1763056285034_1763209187602.jpg";
-import ornamentClock from "@assets/photo_2025-11-13_11-51-05_1763056285033_1763209187602.jpg";
-import grandDisplay from "@assets/photo_2025-11-13_11-51-09_1763056285027_1763209187602.jpg";
-import globeSculpture from "@assets/photo_2025-11-13_11-51-33_1763056315828_1763209187603.jpg";
-import miniatureClock from "@assets/photo_2025-11-13_11-50-51_1763056315829_1763209187603.jpg";
-import baroqueInterior from "@assets/ornate_french_baroqu_899971c7_1763209187603.jpg";
-import goldClock from "@assets/collectt_1763055734521_1763209187604.jpg";
-import greenBronze from "@assets/french_empire_bronze_54038da5_1763209187604.jpg";
-import candelabra from "@assets/collect_1763055734524_1763209187604.webp";
-import antiqueGrandfather from "@assets/antique_grandfather__eab955b0_1763209187605.jpg";
-
 const antiques = [
   {
     id: "1",
     title: "Antique Chinese Porcelain Jar",
     description: "18th century blue and white porcelain with intricate floral motifs",
-    imageUrl: chinesePorcelain,
+    imageUrl: "/attached_assets/antique_chinese_porc_b2f04495_1763209187582.jpg",
     category: "Porcelain",
   },
   {
     id: "2",
     title: "French Empire Bronze Sculpture",
     description: "Patinated bronze figure with exceptional detail",
-    imageUrl: frenchBronze1,
+    imageUrl: "/attached_assets/french_empire_bronze_ddd9e64e_1763209187601.jpg",
     category: "Bronze",
   },
   {
     id: "3",
     title: "Gilded Bronze Figurine",
     description: "French Empire period sculpture with cherub detail",
-    imageUrl: sculpture1,
+    imageUrl: "/attached_assets/photo_2025-11-13_11-51-01_1763056285034_1763209187602.jpg",
     category: "Bronze",
   },
   {
     id: "4",
     title: "Ornate Mantel Clock",
     description: "19th century French bronze and ormolu clock with equestrian figure",
-    imageUrl: ornamentClock,
+    imageUrl: "/attached_assets/photo_2025-11-13_11-51-05_1763056285033_1763209187602.jpg",
     category: "Clocks",
   },
   {
     id: "5",
     title: "Grand Salon Display",
     description: "Collection of French Empire decorative arts and porcelain",
-    imageUrl: grandDisplay,
+    imageUrl: "/attached_assets/photo_2025-11-13_11-51-09_1763056285027_1763209187602.jpg",
     category: "Collections",
   },
   {
     id: "6",
     title: "Bronze Globe Sculpture",
     description: "Monumental bronze scientific instrument with classical figures",
-    imageUrl: globeSculpture,
+    imageUrl: "/attached_assets/photo_2025-11-13_11-51-33_1763056315828_1763209187603.jpg",
     category: "Bronze",
   },
   {
     id: "7",
     title: "Miniature Garniture Set",
     description: "Painted porcelain and gilt bronze clock set",
-    imageUrl: miniatureClock,
+    imageUrl: "/attached_assets/photo_2025-11-13_11-50-51_1763056315829_1763209187603.jpg",
     category: "Clocks",
   },
   {
     id: "8",
     title: "Baroque Palace Interior",
     description: "Ornate ceiling frescoes and architectural details",
-    imageUrl: baroqueInterior,
+    imageUrl: "/attached_assets/ornate_french_baroqu_899971c7_1763209187603.jpg",
     category: "Architecture",
   },
   {
     id: "9",
     title: "Empire Style Mantel Clock",
     description: "Black marble and gilt bronze with allegorical figure",
-    imageUrl: goldClock,
+    imageUrl: "/attached_assets/collectt_1763055734521_1763209187604.jpg",
     category: "Clocks",
   },
   {
     id: "10",
     title: "Classical Bronze Boxer",
     description: "Hellenistic bronze sculpture with verdigris patina",
-    imageUrl: greenBronze,
+    imageUrl: "/attached_assets/french_empire_bronze_54038da5_1763209187604.jpg",
     category: "Bronze",
   },
   {
     id: "11",
     title: "Louis XVI Garniture",
     description: "Gilt bronze and porcelain clock with matching candelabra",
-    imageUrl: candelabra,
+    imageUrl: "/attached_assets/collect_1763055734524_1763209187604.webp",
     category: "Collections",
   },
   {
     id: "12",
     title: "Baroque Period Clock",
     description: "Ornate wooden case with gilt bronze mounts",
-    imageUrl: antiqueGrandfather,
+    imageUrl: "/attached_assets/antique_grandfather__eab955b0_1763209187605.jpg",
     category: "Clocks",
   },
 ];
@@ -112,11 +98,11 @@ export function Gallery() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4">
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4" data-testid="heading-gallery">
               Curated Collection
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6" />
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-gallery-description">
               Exquisite pieces spanning centuries of European and Asian craftsmanship
             </p>
           </div>
@@ -139,13 +125,13 @@ export function Gallery() {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <p className="text-xs uppercase tracking-wider text-primary mb-2">
+                    <p className="text-xs uppercase tracking-wider text-primary mb-2" data-testid={`text-category-${antique.id}`}>
                       {antique.category}
                     </p>
-                    <h3 className="font-serif text-xl font-semibold mb-2">
+                    <h3 className="font-serif text-xl font-semibold mb-2" data-testid={`text-title-${antique.id}`}>
                       {antique.title}
                     </h3>
-                    <p className="text-sm text-white/90">
+                    <p className="text-sm text-white/90" data-testid={`text-description-${antique.id}`}>
                       {antique.description}
                     </p>
                   </div>

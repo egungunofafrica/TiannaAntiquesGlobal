@@ -10,7 +10,7 @@ export function About() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4" data-testid="heading-about">
-              About Tianna
+              About Michelle Tianna
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-founder-title">
@@ -22,16 +22,15 @@ export function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Profile Image */}
             <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <div className="absolute -inset-4 bg-primary/10 rounded-md transform rotate-3" />
-                <Avatar className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-md border-4 border-card" data-testid="img-founder-profile">
-                  <AvatarImage 
+              <div className="relative inline-block">
+                <div className="absolute -inset-4 bg-primary/10 rounded-lg transform rotate-3" />
+                <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-lg overflow-hidden border-4 border-card shadow-xl" data-testid="img-founder-profile">
+                  <img 
                     src="/attached_assets/ceo-tianna.png" 
-                    alt="Tianna - CEO & Founder"
-                    className="object-cover"
+                    alt="Michelle Tianna - CEO & Founder"
+                    className="w-full h-full object-cover object-center"
                   />
-                  <AvatarFallback className="text-6xl font-serif">T</AvatarFallback>
-                </Avatar>
+                </div>
               </div>
             </div>
 

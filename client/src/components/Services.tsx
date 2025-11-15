@@ -1,9 +1,9 @@
 import { Card } from "@/components/ui/card";
-import { ShoppingBag, Package, Building, Store } from "lucide-react";
+import { Building2, Briefcase, Globe, Award, ShieldCheck, Search } from "lucide-react";
 
 export function Services() {
   return (
-    <section id="services" className="py-24 bg-card">
+    <section id="services" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -12,118 +12,111 @@ export function Services() {
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-services-description">
-              Comprehensive antique acquisition and supply services for institutional and commercial clients
+              Comprehensive institutional-grade services for discerning clients worldwide
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Acquiring Service */}
-            <Card className="p-10 border-card-border hover-elevate" data-testid="card-service-acquiring">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="p-3 bg-primary/10 rounded-md">
-                  <ShoppingBag className="w-8 h-8 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-2" data-testid="heading-acquiring">
-                    Acquiring Antiques
-                  </h3>
-                  <p className="text-sm text-muted-foreground uppercase tracking-wider" data-testid="text-acquiring-subtitle">
-                    Sourcing Excellence
-                  </p>
-                </div>
+          {/* Service Cards Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {/* Museum Collections */}
+            <Card className="p-8 border-card-border hover-elevate" data-testid="card-service-museum">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <Building2 className="w-6 h-6 text-primary" />
               </div>
-              <p className="text-base text-foreground/80 leading-relaxed mb-6" data-testid="text-acquiring-description">
-                We specialize in sourcing exceptional antique pieces from established dealers, auctions, 
-                and private collections worldwide. Our extensive network and deep market knowledge ensure 
-                access to the finest European and Asian antiques.
+              <h3 className="font-serif text-2xl font-semibold text-foreground mb-4" data-testid="heading-museum">
+                Museum Collections
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed" data-testid="text-museum-description">
+                Specialized sourcing for permanent and exhibition collections, with complete provenance documentation 
+                and authentication.
               </p>
-              <ul className="space-y-3 text-sm text-foreground/80">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Authentication and provenance verification</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Competitive pricing and negotiation expertise</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Secure international shipping and customs handling</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Comprehensive documentation and certification</span>
-                </li>
-              </ul>
             </Card>
 
-            {/* Supplying Service */}
-            <Card className="p-10 border-card-border hover-elevate" data-testid="card-service-supplying">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="p-3 bg-accent/10 rounded-md">
-                  <Package className="w-8 h-8 text-accent" />
-                </div>
-                <div>
-                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-2" data-testid="heading-supplying">
-                    Supplying Collections
-                  </h3>
-                  <p className="text-sm text-muted-foreground uppercase tracking-wider" data-testid="text-supplying-subtitle">
-                    Curated Solutions
-                  </p>
-                </div>
+            {/* Corporate Art Programs */}
+            <Card className="p-8 border-card-border hover-elevate" data-testid="card-service-corporate">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <Briefcase className="w-6 h-6 text-primary" />
               </div>
-              <p className="text-base text-foreground/80 leading-relaxed mb-6" data-testid="text-supplying-description">
-                We provide carefully curated antique collections tailored to the unique needs of museums, 
-                corporate offices, and retail establishments. Each piece is selected to enhance your space 
-                and tell a compelling story.
+              <h3 className="font-serif text-2xl font-semibold text-foreground mb-4" data-testid="heading-corporate">
+                Corporate Art Programs
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed" data-testid="text-corporate-description">
+                Curated acquisitions for executive offices, lobbies, and corporate collections that reflect prestige 
+                and refinement.
               </p>
-              <ul className="space-y-3 text-sm text-foreground/80">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Custom collection curation for specific themes</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Flexible leasing and purchase options</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Installation and display consultation</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Ongoing maintenance and conservation guidance</span>
-                </li>
-              </ul>
+            </Card>
+
+            {/* Multinational Projects */}
+            <Card className="p-8 border-card-border hover-elevate" data-testid="card-service-multinational">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <Globe className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-serif text-2xl font-semibold text-foreground mb-4" data-testid="heading-multinational">
+                Multinational Projects
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed" data-testid="text-multinational-description">
+                Large-scale sourcing for luxury developments, high-end retail spaces, and international hospitality 
+                ventures.
+              </p>
+            </Card>
+
+            {/* VIP Consultation Services */}
+            <Card className="p-8 border-card-border hover-elevate" data-testid="card-service-vip">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <Award className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-serif text-2xl font-semibold text-foreground mb-4" data-testid="heading-vip">
+                VIP Consultation Services
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed" data-testid="text-vip-description">
+                Personalized guidance from initial inquiry through acquisition, ensuring each piece meets exacting 
+                institutional standards.
+              </p>
+            </Card>
+
+            {/* Authentication & Provenance */}
+            <Card className="p-8 border-card-border hover-elevate" data-testid="card-service-authentication">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <ShieldCheck className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-serif text-2xl font-semibold text-foreground mb-4" data-testid="heading-authentication">
+                Authentication & Provenance
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed" data-testid="text-authentication-description">
+                Comprehensive documentation, condition reports, and expert authentication for all pieces in our 
+                collection.
+              </p>
+            </Card>
+
+            {/* Specialized Sourcing */}
+            <Card className="p-8 border-card-border hover-elevate" data-testid="card-service-sourcing">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <Search className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-serif text-2xl font-semibold text-foreground mb-4" data-testid="heading-sourcing">
+                Specialized Sourcing
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed" data-testid="text-sourcing-description">
+                Bespoke search services to locate specific periods, styles, or types of European decorative arts.
+              </p>
             </Card>
           </div>
 
-          {/* Client Types */}
-          <div className="grid sm:grid-cols-3 gap-6">
-            <Card className="p-8 text-center border-card-border hover-elevate" data-testid="card-client-companies">
-              <Building className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h4 className="font-serif text-xl font-semibold mb-2" data-testid="heading-client-companies">Companies</h4>
-              <p className="text-sm text-muted-foreground" data-testid="text-client-companies-description">
-                Corporate offices and headquarters seeking distinguished decor
+          {/* Online-Only Operations Notice */}
+          <Card className="p-10 bg-card/50 border-primary/20" data-testid="card-online-only">
+            <div className="text-center max-w-4xl mx-auto">
+              <h3 className="font-serif text-2xl font-bold text-foreground mb-4" data-testid="heading-online-only">
+                Online-Only Operations • B2B Exclusively
+              </h3>
+              <p className="text-base text-muted-foreground leading-relaxed mb-4" data-testid="text-online-only-description">
+                We operate exclusively online to serve our international institutional clientele efficiently. All consultations, 
+                viewings, and transactions are conducted remotely with the highest level of professionalism.
               </p>
-            </Card>
-            
-            <Card className="p-8 text-center border-card-border hover-elevate" data-testid="card-client-museums">
-              <Package className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h4 className="font-serif text-xl font-semibold mb-2" data-testid="heading-client-museums">Museums</h4>
-              <p className="text-sm text-muted-foreground" data-testid="text-client-museums-description">
-                Cultural institutions requiring authenticated historical pieces
+              <p className="text-sm text-muted-foreground italic" data-testid="text-online-only-clients">
+                Serving museums, luxury retail developments, corporate collections, and multinational projects worldwide.
               </p>
-            </Card>
-            
-            <Card className="p-8 text-center border-card-border hover-elevate" data-testid="card-client-malls">
-              <Store className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h4 className="font-serif text-xl font-semibold mb-2" data-testid="heading-client-malls">Malls</h4>
-              <p className="text-sm text-muted-foreground" data-testid="text-client-malls-description">
-                Retail centers seeking elegant showpieces and displays
-              </p>
-            </Card>
-          </div>
+            </div>
+          </Card>
         </div>
       </div>
     </section>

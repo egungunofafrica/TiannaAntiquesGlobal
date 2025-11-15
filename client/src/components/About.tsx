@@ -36,29 +36,21 @@ export function About() {
 
             {/* Bio */}
             <div className="space-y-6">
-              <div>
-                <h3 className="font-serif text-3xl font-semibold text-foreground mb-4" data-testid="heading-vision">
-                  A Global Vision for Timeless Treasures
-                </h3>
-                <div className="space-y-4 text-base text-foreground/80 leading-relaxed">
-                  <p data-testid="text-bio-paragraph-1">
-                    With extensive experience across international markets, Michelle Tianna has established herself 
-                    as a trusted name in the antiques industry. Her expertise spans European and Asian antiques, 
-                    with a particular focus on French Empire bronzes, Chinese porcelain, and ornate timepieces.
-                  </p>
-                  <p data-testid="text-bio-paragraph-2">
-                    Based in Redbank Plains, Queensland, Australia, Michelle serves a distinguished clientele 
-                    including museums, corporations, and premium retail establishments across multiple continents. 
-                    Her keen eye for authenticity and quality has made her the go-to specialist for institutions 
-                    seeking to acquire pieces of historical significance.
-                  </p>
-                  <p data-testid="text-bio-paragraph-3">
-                    Michelle's approach combines traditional expertise with modern business practices, ensuring 
-                    seamless transactions and impeccable provenance documentation. Whether sourcing rare pieces 
-                    for private collections or supplying curated selections for commercial display, her commitment 
-                    to excellence remains unwavering.
-                  </p>
-                </div>
+              <div className="space-y-4 text-base text-foreground/80 leading-relaxed">
+                <p data-testid="text-bio-paragraph-1">
+                  With decades of experience in the international antiques trade, Tianna's Luxury Antiques has 
+                  established itself as a premier source for museum-quality European decorative arts. Our specialization 
+                  in 18th and 19th-century French and European pieces makes us the preferred partner for institutions 
+                  seeking exceptional acquisitions.
+                </p>
+                <p data-testid="text-bio-paragraph-2" className="font-semibold text-foreground">
+                  Operating exclusively online with B2B focus,{" "}
+                  <span className="font-normal">
+                    we provide seamless access to our curated collection for clients worldwide. Our extensive network 
+                    across six continents enables us to source the finest pieces and deliver unparalleled service to 
+                    museums, luxury retail developments, and multinational corporate art programs.
+                  </span>
+                </p>
               </div>
             </div>
           </div>
